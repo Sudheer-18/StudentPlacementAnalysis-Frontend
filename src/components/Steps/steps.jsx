@@ -37,7 +37,7 @@ const Steps = forwardRef((props, ref) => {
 
   const handleClick = (step) => {
     if (step.title === 'Coding') navigate('/compiler');
-    else if (step.title === 'AI Interview') window.location.href = ' http://localhost:8080/';
+    else if (step.title === 'AI Interview') window.location.href = ' https://interview-lovat-seven.vercel.app/';
     else if (step.title === 'Resume Tracker') navigate('/resumec');
     else if (step.title === 'Practice') navigate('/practice')
   };
