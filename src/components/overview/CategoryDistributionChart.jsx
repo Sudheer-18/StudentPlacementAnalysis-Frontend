@@ -85,7 +85,7 @@ const WeeklyContestParticipationChart = () => {
     const fetchData = async () => {
       try {
         const res = await fetch(
-          "https://projectspace-backend.onrender.com/weekly-contest-participation"
+          "https://studentplacementanalysis-backend.onrender.com/weekly-contest-participation"
         );
         const data = await res.json();
         setRawData(data);

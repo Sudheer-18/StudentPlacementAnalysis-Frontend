@@ -104,7 +104,7 @@ const ContestParticipationChart = () => {
     const fetchParticipationData = async () => {
       try {
         const response = await fetch(
-         "https://projectspace-backend.onrender.com/monthly-contest-participation"
+         "https://studentplacementanalysis-backend.onrender.com/monthly-contest-participation"
         );
         const result = await response.json();
         setData(result);

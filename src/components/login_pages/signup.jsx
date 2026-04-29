@@ -64,7 +64,7 @@ const Signup = () => {
     formData.append("photo", file);
 
     try {
-      await axios.post("http://localhost:5001/register", formData);
+      await axios.post("https://studentplacementanalysis-backend.onrender.com/register", formData);
       alert("Signup successful!");
       window.location.href = "/signin";
     } catch (err) {

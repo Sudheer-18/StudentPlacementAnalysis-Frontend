@@ -81,7 +81,7 @@ const DriveParticipationChart = () => {
   useEffect(() => {
     const fetchDriveData = async () => {
       try {
-        const response = await fetch("https://projectspace-backend.onrender.com/drive-participation");
+        const response = await fetch("https://studentplacementanalysis-backend.onrender.com/drive-participation");
         const data = await response.json();
         setDriveData(data);
       } catch (err) {
