@@ -70,7 +70,7 @@ const OverviewPage = () => {
     const fetchStats = async () => {
       try {
         // const baseURL = "https://projetspace-backend.onrender.com";
-        const baseURL = "http://localhost:5001"
+        const baseURL = "https://studentplacementanalysis-backend.onrender.com"
 
         const [
           usersRes,
