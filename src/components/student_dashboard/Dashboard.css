@@ -1,0 +1,333 @@
+/* =======================
+   Student Dashboard CSS
+   Modern Theme: #C535AE, #854CE6
+=========================== */
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+
+.student-dashboard {
+  /* background: linear-gradient(to right, #fce4f9, #f1e4fc); */
+  color: #1f2937;
+  /* background-color: red; */
+  flex: 1;
+  /* width: 100%; */
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+
+.dashboard-container {
+  width: 70%;
+  /* padding: 2rem clamp(1rem, 5vw, 3rem); */
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* .profile-banner {
+  background: linear-gradient(to right, rgba(197, 53, 174, 0.8), rgba(133, 76, 230, 0.8));
+  color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  width: 90%;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(10px); 
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+} */
+.profile-banner {
+  background: linear-gradient(rgba(197, 53, 174, 0.8)); /* translucent white */
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  text-align: center;
+  width: 90%;
+  margin-bottom: 2rem;
+  color: white;
+}
+/* Optional: Customize AI Interview Table Header */
+.section123:nth-of-type(2) .contest-table thead {
+  background-color: #C535AE; /* Pink instead of Purple */
+}
+/* Optional: Section-specific table header colors */
+.section123:nth-of-type(1) .contest-table thead { background: #854CE6; } /* Coding */
+.section123:nth-of-type(2) .contest-table thead { background: #C535AE; } /* AI Interviews */
+.section123:nth-of-type(3) .contest-table thead { background: #E6954C; } /* MCQ Tests */
+
+
+.profile-info h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.profile-info p {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+.section123 {
+  width: 100%; /* Changed from 44% */
+  max-width: 100%;
+  height: auto; /* Let table height grow */
+  overflow-y: visible;
+}
+
+
+.section123 h1 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #C535AE;
+  font-weight: 600;
+  border-bottom: 2px solid #854CE6;
+  padding-bottom: 0.5rem;
+}
+
+/* .section123 {
+  width: 44%;
+  height: 300px;
+  overflow-y: scroll;
+
+} */
+
+.no-records {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  color: #ffffffcc;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  width: 100%;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.05);
+  margin-bottom: 1rem;
+}
+
+.no-records p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+.heading{
+  color:#7C3283;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.card-container::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  min-width: 160px;
+  flex: 0 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid #C535AE;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.card p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+.loading {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  color: #854CE6;
+}
+/* Override scroll and fixed height */
+.summary-section {
+  height: auto !important;
+  overflow-y: visible !important;
+}
+
+
+/* Score Summary */
+.score-summary-container {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  margin-bottom: 2rem;
+}
+
+.main-content12 {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.summary-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.summary-box {
+  background: #f5f3f7;
+  border-left: 5px solid #854CE6;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  flex: 1;
+  min-width: 180px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.summary-box:hover {
+  background: #f0e6f9;
+  transform: scale(1.05);
+}
+
+.summary-box h3 {
+  font-size: 1.25rem;
+  color: #C535AE;
+  margin-bottom: 0.5rem;
+}
+
+.summary-box p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #854CE6;
+}
+
+.empty-msg{
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .profile-info h2 {
+    font-size: 1.8rem;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+
+  .summary-container {
+    flex-direction: column;
+  }
+
+  .summary-box p {
+    font-size: 1.5rem;
+  }
+}
+/* .table-wrapper {
+  overflow-x: auto;
+  background: #1D2735;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+}
+
+.contest-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.contest-table thead {
+  background: #C535AE;
+  color: white;
+}
+
+.contest-table th, .contest-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #1D2735;
+}
+
+.contest-table tr:hover {
+  background-color: #1D2735;
+  color: white;
+}
+
+.contest-table td {
+  color: #1f2937;
+  font-size: 0.95rem;
+} */
+.table-wrapper {
+  overflow-x: auto;
+  background: #1d2735; /* match section background */
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.contest-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1D2735;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.contest-table thead {
+  background: linear-gradient(#C336B0, #8B4AE1);
+  opacity: .6;
+}
+
+.contest-table th, .contest-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.95rem;
+}
+
+.contest-table tbody tr:hover {
+  background-color: #3b4a61;
+  transition: background 0.3s ease;
+}
+
+.contest-table td {
+  color: #f1f1f1;
+}
+
+.contest-table th {
+  font-weight: 600;
+  color: #ffffff;
+}
